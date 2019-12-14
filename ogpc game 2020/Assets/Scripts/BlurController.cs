@@ -1,5 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
+///-----------------------------------------------------------------
+ //  Class:          BlurController
+  // Description:    Created by Unity, edited by VC.
+ //  Author:         VueCode
+  // GitHub:         https://github.com/ivuecode/
+//----------------------------------------------------------------
 using UnityEngine;
 
 [ExecuteInEditMode]

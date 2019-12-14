@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6181499136371603216}
   - component: {fileID: 6181499136371603219}
   - component: {fileID: -606803065853486502}
-  - component: {fileID: 6926526759829491990}
   m_Layer: 9
   m_Name: Liqud
   m_TagString: liqud
@@ -51,7 +50,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: f592c6d44aa938f4485cbde1f2de579e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -120,17 +119,3 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.06368873
---- !u!114 &6926526759829491990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6181499136371603218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b24d2cf04e2cad9489684b3e5f8eb8c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waterRenderer: {fileID: 6181499136371603216}
-  waterColor: {r: 1, g: 0, b: 0, a: 0}
