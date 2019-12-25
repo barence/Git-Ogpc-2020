@@ -2,28 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 public class FinshGame : MonoBehaviour
 {
-    public int X;
-
+    public Slider progression;
+    public Text percent;
+    public int x;
+    public float p;
     void Start()
     {
-        
-    }
+        p = 0;
 
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        if ( X == 1000)
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("liqud"))
         {
-            X = X + 1;
+            x = x + 1;
         }
     }
-
+    void Update()
+    {
+        if (x == 300)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+        p = x / 3;
+        progression.value = p;
+        percent.text = p.ToString() + "%";
+    }
 }

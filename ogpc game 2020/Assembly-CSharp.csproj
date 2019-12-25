@@ -62,20 +62,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\dreamlo\dreamloLeaderBoard.cs" />
+    <Compile Include="Assets\dreamlo\LeaderBoardSample.cs" />
     <Compile Include="Assets\Scripts\BlurController.cs" />
     <Compile Include="Assets\Scripts\ChangeColor.cs" />
     <Compile Include="Assets\Scripts\CheaterMenu.cs" />
     <Compile Include="Assets\Scripts\Day_Cycle.cs" />
+    <Compile Include="Assets\Scripts\Destory.cs" />
+    <Compile Include="Assets\Scripts\Experiment.cs" />
     <Compile Include="Assets\Scripts\FinshGame.cs" />
     <Compile Include="Assets\Scripts\Flow.cs" />
     <Compile Include="Assets\Scripts\FollowingCamera.cs" />
-    <Compile Include="Assets\Scripts\Laser.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Patrol.cs" />
     <Compile Include="Assets\Scripts\PauseMenu.cs" />
-    <Compile Include="Assets\Scripts\Percentage.cs" />
     <Compile Include="Assets\Scripts\Player_movement.cs" />
     <Compile Include="Assets\Scripts\Randomize.cs" />
+    <Compile Include="Assets\Scripts\Rotate.cs" />
     <Compile Include="Assets\Scripts\SettingsMenu.cs" />
     <Compile Include="Assets\Scripts\Stopwatch.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
@@ -112,6 +115,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <None Include="Assets\Shaders\BlurEffectShader.shader" />
+    <None Include="Assets\dreamlo\README_FIRST.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\Unlit Shader.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />

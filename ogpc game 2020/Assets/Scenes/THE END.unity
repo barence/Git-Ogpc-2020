@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -451,6 +451,7 @@ GameObject:
   - component: {fileID: 1560862932}
   - component: {fileID: 1560862931}
   - component: {fileID: 1560862930}
+  - component: {fileID: 1560862933}
   m_Layer: 5
   m_Name: InputField
   m_TagString: Untagged
@@ -578,6 +579,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1560862928}
   m_CullTransparentMesh: 0
+--- !u!114 &1560862933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560862928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f579fefeba774393965b534c29d2e83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IUpgradedAndGotSSL: 1
+  privateCode: msUrfTPGTUujRONpAduplwnP7f9qH80USrcscO6yE6jg
+  publicCode: 5de194b4b5622f683cec7077/xml
 --- !u!1 &1756387441
 GameObject:
   m_ObjectHideFlags: 0
