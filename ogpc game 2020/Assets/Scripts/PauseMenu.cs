@@ -40,7 +40,7 @@ public class PauseMenu : MonoBehaviour
     }
     public void Loadmenu ()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+     //  SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex == );
         Time.timeScale = 1f;
     }
     public void Quitgame()

@@ -27,7 +27,7 @@ public class Flow : MonoBehaviour
     public void Play()
     {
         canCount = true;
-    }
+    }   
     public void Pause()
     {
         canCount = false;

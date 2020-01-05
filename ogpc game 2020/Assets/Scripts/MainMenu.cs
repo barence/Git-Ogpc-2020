@@ -4,45 +4,60 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
-    public void PlayLevel1 ()
+    void Update()
     {
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            Debug.Log(PlayerPrefs.GetInt("Level set").ToString());
+        }
+    }
+    public void PlayLevel1()
+    {
+        //if (PlayerPrefs.GetInt("Level set") = 1)
+        // {
+
+        // }
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
-    public void PlayLevel2 ()
+    public void PlayLevel2()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
-    public void PlayLevel3 ()
+    public void PlayLevel3()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
     }
-    public void PlayLevel4 ()
+    public void PlayLevel4()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 4);
     }
-    public void PlayLevel5 ()
+    public void PlayLevel5()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 5);
     }
-    public void PlayLevel6 ()
+    public void PlayLevel6()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 6);
     }
-    public void PlayLevel7 ()
+    public void PlayLevel7()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 7);
     }
-    public void PlayLevel8 ()
+    public void PlayLevel8()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 8);
     }
-    public void PlayLevel9 ()
+    public void PlayLevel9()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 9);
     }
-    public void PlayLevel10 ()
+    public void PlayLevel10()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 10);
+    }
+    public void Restart()
+    {
+       // (PlayerPrefs.SetInt("Level set") = 1)
     }
     public void QuitGame()
     {

@@ -69,6 +69,8 @@
     <Compile Include="Assets\Scripts\CheaterMenu.cs" />
     <Compile Include="Assets\Scripts\Day_Cycle.cs" />
     <Compile Include="Assets\Scripts\Destory.cs" />
+    <Compile Include="Assets\Scripts\Drag.cs" />
+    <Compile Include="Assets\Scripts\Draw.cs" />
     <Compile Include="Assets\Scripts\Experiment.cs" />
     <Compile Include="Assets\Scripts\FinshGame.cs" />
     <Compile Include="Assets\Scripts\Flow.cs" />
@@ -78,7 +80,9 @@
     <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\Player_movement.cs" />
     <Compile Include="Assets\Scripts\Randomize.cs" />
+    <Compile Include="Assets\Scripts\Reset.cs" />
     <Compile Include="Assets\Scripts\Rotate.cs" />
+    <Compile Include="Assets\Scripts\Rotate_Object.cs" />
     <Compile Include="Assets\Scripts\SettingsMenu.cs" />
     <Compile Include="Assets\Scripts\Stopwatch.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
