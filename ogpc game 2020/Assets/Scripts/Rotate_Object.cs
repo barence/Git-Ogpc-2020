@@ -5,6 +5,7 @@ using UnityEngine;
 public class Rotate_Object : MonoBehaviour
 {
     public float rSpeed = 50.0f;
+    public GameObject Rotating_Object;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,7 @@ public class Rotate_Object : MonoBehaviour
     }
     void OnMouseDrag()
     {
-       transform.Rotate(Vector3.forward * rSpeed * Time.deltaTime);
+        Rotating_Object.transform.Rotate(Vector3.forward * rSpeed * Time.deltaTime);
     }
 
 }

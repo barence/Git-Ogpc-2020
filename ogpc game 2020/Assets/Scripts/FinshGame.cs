@@ -31,12 +31,14 @@ public class FinshGame : MonoBehaviour
         if (c == 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            finsh.SetActive(false);
-            Value = PlayerPrefs.GetInt(key);
-            Value = Value + 1;
-            PlayerPrefs.SetInt(key, Value);
-            Debug.Log(PlayerPrefs.GetInt(key));
-
+            if (c == 0)
+            {
+                finsh.SetActive(false);
+                Value = PlayerPrefs.GetInt(key);
+                Value = Value + 1;
+                PlayerPrefs.SetInt(key, Value);
+                Debug.Log(PlayerPrefs.GetInt(key));
+            }
         }
         c = 100 - p;
         p = x / 3;
