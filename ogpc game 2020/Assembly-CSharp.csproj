@@ -64,23 +64,22 @@
   <ItemGroup>
     <Compile Include="Assets\dreamlo\dreamloLeaderBoard.cs" />
     <Compile Include="Assets\dreamlo\LeaderBoardSample.cs" />
-    <Compile Include="Assets\Move_Object.cs" />
     <Compile Include="Assets\Scripts\BlurController.cs" />
-    <Compile Include="Assets\Scripts\ChangeColor.cs" />
     <Compile Include="Assets\Scripts\CheaterMenu.cs" />
     <Compile Include="Assets\Scripts\Cup.cs" />
-    <Compile Include="Assets\Scripts\Day_Cycle.cs" />
     <Compile Include="Assets\Scripts\Drag.cs" />
     <Compile Include="Assets\Scripts\Draw.cs" />
     <Compile Include="Assets\Scripts\Experiment.cs" />
     <Compile Include="Assets\Scripts\FinshGame.cs" />
     <Compile Include="Assets\Scripts\Flow.cs" />
+    <Compile Include="Assets\Scripts\Hotter.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Move_Object.cs" />
     <Compile Include="Assets\Scripts\On_Off.cs" />
     <Compile Include="Assets\Scripts\PauseMenu.cs" />
-    <Compile Include="Assets\Scripts\Player_movement.cs" />
     <Compile Include="Assets\Scripts\Randomize.cs" />
     <Compile Include="Assets\Scripts\Reset.cs" />
+    <Compile Include="Assets\Scripts\Reverse_gravity.cs" />
     <Compile Include="Assets\Scripts\Rotate_Background.cs" />
     <Compile Include="Assets\Scripts\Rotate_Object.cs" />
     <Compile Include="Assets\Scripts\SettingsMenu.cs" />

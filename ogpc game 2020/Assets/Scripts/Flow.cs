@@ -9,18 +9,20 @@ public class Flow : MonoBehaviour
     bool canCount = false;
     public int C;
     float X;
+    public float y;
+    public float b;
 
     void Start()
     {
-        C = 0;
+
     }
     void FixedUpdate()
     {
         if (canCount == true)
         {
-            X = Random.Range(-4.2f, -4.0f);
+            X = Random.Range(y, b);
             
-            Instantiate(Liquadprefab, new Vector3(X, 3.64f, -1), Quaternion.identity);
+            Instantiate(Liquadprefab, new Vector3(X, 3.24f, -1), Quaternion.identity);
             C = C + 1;
         }
     }

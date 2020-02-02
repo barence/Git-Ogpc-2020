@@ -91,7 +91,7 @@ public class dreamloLeaderBoard : MonoBehaviour {
 		StartCoroutine(GetRequest(dreamloWebserviceURL + privateCode + "/add-pipe/" + UnityWebRequest.EscapeURL(playerName) + "/" + totalScore.ToString()+ "/" + totalSeconds.ToString()));
 	}
 	
-	void AddScoreWithPipe(string playerName, int totalScore, int totalSeconds, string shortText)
+	void AddScoreWithPipe(string playerName, int totalScore, int totalSeconds, string shortText) 
 	{
 		playerName = Clean(playerName);
 		shortText = Clean(shortText);

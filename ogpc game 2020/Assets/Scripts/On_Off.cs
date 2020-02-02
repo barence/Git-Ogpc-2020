@@ -22,12 +22,10 @@ public class On_Off : MonoBehaviour
         if (On == true)
         {
             GetComponent<PointEffector2D>().forceMagnitude = (-0.15f);
-            GetComponent<AreaEffector2D>().forceMagnitude = (0.15F);
         }
         if (On == false)
         {
             GetComponent<PointEffector2D>().forceMagnitude = (0);
-            GetComponent<AreaEffector2D>().forceMagnitude = (0);
         }
     }
 }

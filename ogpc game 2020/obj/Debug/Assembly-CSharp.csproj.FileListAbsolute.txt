@@ -1,0 +1,2 @@
+C:\Users\KTT\Desktop\Git Ogpc 2020\ogpc game 2020\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\KTT\Desktop\Git Ogpc 2020\ogpc game 2020\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

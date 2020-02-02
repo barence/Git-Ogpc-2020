@@ -5,7 +5,7 @@ public class LeaderBoardSample : MonoBehaviour {
 	float startTime = 10.0f;
 	float timeLeft = 0.0f;
 	
-	int totalScore = 0;
+	int totalScore;
 	string playerName = "";
 	string code = "";
 
@@ -31,17 +31,14 @@ public class LeaderBoardSample : MonoBehaviour {
 
 		this.timeLeft = startTime;
 		this.gs = gameState.waiting;
-	}
+        totalScore =  (int) Stopwatch.timestart;
+    }
 	
 	void Update () 
 	{
 		if (this.gs == gameState.running)
 		{
-			timeLeft = Mathf.Clamp(timeLeft - Time.deltaTime, 0, this.startTime);
-			if (timeLeft == 0)
-			{
-				this.gs = gameState.enterscore;
-			}
+            this.gs = gameState.enterscore;			
 		}
 	}
 	
@@ -56,23 +53,20 @@ public class LeaderBoardSample : MonoBehaviour {
 		GUILayout.BeginArea(r, new GUIStyle("box"));
 		
 		GUILayout.BeginVertical();
-		GUILayout.Label("Time Left:" + this.timeLeft.ToString("0.000"));
+		
 		if (this.gs == gameState.waiting || this.gs == gameState.running)
 		{
-			if (GUILayout.Button("Click me as much as you can in " + this.startTime.ToString("0") + " seconds!"))
-			{
-				this.totalScore++;
+		
 				this.gs = gameState.running;
-			}
 			
-			GUILayout.Label("Total Score: " + this.totalScore.ToString());
+			
 		}
 		
 		
 		
 		if (this.gs == gameState.enterscore)
 		{
-			GUILayout.Label("Total Score: " + this.totalScore.ToString());
+			GUILayout.Label("Total Score: " + this.totalScore.ToString() + " Seconds");
 			GUILayout.BeginHorizontal();
 			GUILayout.Label("Your Name: ");
 			this.playerName = GUILayout.TextField(this.playerName, width200);

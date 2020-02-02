@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 public class FinshGame : MonoBehaviour
 {
     public string key = "Level set";
     public int Value = 0;
     public Slider progression;
     public Text percent;
-    public Text percentOnCup;
+    public TextMeshProUGUI percentOnCup;
     public int x;
     public float p;
     public float c;
