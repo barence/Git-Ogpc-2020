@@ -62,10 +62,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AchievementDisplay.cs" />
+    <Compile Include="Assets\AchievementStorage\Achievement.cs" />
     <Compile Include="Assets\dreamlo\dreamloLeaderBoard.cs" />
-    <Compile Include="Assets\dreamlo\LeaderBoardSample.cs" />
+    <Compile Include="Assets\dreamlo\LeaderBoard.cs" />
     <Compile Include="Assets\Scripts\BlurController.cs" />
     <Compile Include="Assets\Scripts\CheaterMenu.cs" />
+    <Compile Include="Assets\Scripts\CountDownTimer.cs" />
     <Compile Include="Assets\Scripts\Cup.cs" />
     <Compile Include="Assets\Scripts\Drag.cs" />
     <Compile Include="Assets\Scripts\Draw.cs" />

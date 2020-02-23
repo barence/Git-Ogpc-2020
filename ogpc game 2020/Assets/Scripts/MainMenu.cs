@@ -2,62 +2,40 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
-    void Update()
+    public int num;
+    public Button[] lvlButtons;
+    public int LevelValue;
+    public Animator transition;
+    public float transistionTime = 1f;
+    void Start()
     {
-        if (Input.GetKeyDown(KeyCode.J))
+        int levelAt = PlayerPrefs.GetInt("levelAt", 2);
+        for (int i = 0; i < lvlButtons.Length; i++)
         {
-            Debug.Log(PlayerPrefs.GetInt("Level set").ToString());
+            if (i + 2 > levelAt)
+                lvlButtons[i].interactable = false;
         }
     }
-    public void PlayLevel1()
+    public void LoadNextlevel()
     {
-        //if (PlayerPrefs.GetInt("Level set") = 1)
-        // {
+        StartCoroutine(Loadlevel(SceneManager.GetActiveScene().buildIndex + num));
+        LevelValue = PlayerPrefs.GetInt("Level set");
+    }
 
-        // }
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
-    public void PlayLevel2()
+
+    IEnumerator Loadlevel(int Levelindex)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        transition.SetTrigger("Start");
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(Levelindex);
     }
-    public void PlayLevel3()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
-    }
-    public void PlayLevel4()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 4);
-    }
-    public void PlayLevel5()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 5);
-    }
-    public void PlayLevel6()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 6);
-    }
-    public void PlayLevel7()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 7);
-    }
-    public void PlayLevel8()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 8);
-    }
-    public void PlayLevel9()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 9);
-    }
-    public void PlayLevel10()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 10);
-    }
+
     public void Restart()
     {
-       // (PlayerPrefs.SetInt("Level set") = 1)
+        PlayerPrefs.SetInt("Level set", 1);
     }
     public void QuitGame()
     {

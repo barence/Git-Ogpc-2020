@@ -22,7 +22,7 @@ public class Flow : MonoBehaviour
         {
             X = Random.Range(y, b);
             
-            Instantiate(Liquadprefab, new Vector3(X, 3.24f, -1), Quaternion.identity);
+            Instantiate(Liquadprefab, new Vector3(X, 3.265f, -1), Quaternion.identity);
             C = C + 1;
         }
     }
