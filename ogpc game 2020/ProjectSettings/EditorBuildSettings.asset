@@ -27,9 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/THE END.unity
     guid: 5623a292875a687469a8af35e65116f0
   - enabled: 0
-    path: Assets/Scenes/Game (2.0).unity
-    guid: 3c81c05ea8991754ebe3b74c0fbe4704
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/Game (3.0).unity
-    guid: 122d54a01b6175643bc43d5a40400f57
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

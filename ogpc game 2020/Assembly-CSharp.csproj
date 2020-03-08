@@ -62,8 +62,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AchievementDisplay.cs" />
     <Compile Include="Assets\AchievementStorage\Achievement.cs" />
+    <Compile Include="Assets\AchievementStorage\AchievementDisplay.cs" />
     <Compile Include="Assets\dreamlo\dreamloLeaderBoard.cs" />
     <Compile Include="Assets\dreamlo\LeaderBoard.cs" />
     <Compile Include="Assets\Scripts\BlurController.cs" />
@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Cup.cs" />
     <Compile Include="Assets\Scripts\Drag.cs" />
     <Compile Include="Assets\Scripts\Draw.cs" />
+    <Compile Include="Assets\Scripts\Enable.cs" />
     <Compile Include="Assets\Scripts\Experiment.cs" />
     <Compile Include="Assets\Scripts\FinshGame.cs" />
     <Compile Include="Assets\Scripts\Flow.cs" />

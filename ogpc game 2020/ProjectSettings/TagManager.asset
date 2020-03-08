@@ -6,6 +6,7 @@ TagManager:
   tags:
   - liqud
   - Stop
+  - Space
   layers:
   - Default
   - TransparentFX
