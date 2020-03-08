@@ -21,12 +21,12 @@ public class Enable : MonoBehaviour
         if (Gone == (false))
         {
             gameObject.GetComponent < BoxCollider2D >().enabled = false;
-            gameObject.GetComponent < SpriteRenderer >().sprite. ;
+          //  gameObject.GetComponent < SpriteRenderer >().sprite. ;
         }
         if (Gone == (true))
         {
             gameObject.GetComponent < BoxCollider2D >().enabled = true;
-            gameObject.GetComponent < SpriteRenderer >().sprite. ;
+         //   gameObject.GetComponent < SpriteRenderer >().sprite. ;
         }
     }
 }
